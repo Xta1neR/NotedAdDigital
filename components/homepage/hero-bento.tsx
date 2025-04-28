@@ -6,7 +6,7 @@ import { SparklesText } from "../magicui/sparkles-text";
 
 const HeroBento = () => {
   return (
-    <div className="grid grid-cols-10 gap-4 p-4 w-[95%] mx-auto  mt-10 mb-10">
+    <div className="grid grid-cols-10 gap-4 p-4 w-full lg:w-11/12 mx-auto mt-10 mb-10">
       {/* Desktop & Tablet View */}
       {/* First Row */}
       <div className="hidden md:block col-span-3 md:col-span-3 p-4 bg-blue-500/60 rounded-2xl">

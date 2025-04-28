@@ -3,6 +3,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import {Syne} from "next/font/google";
 
+
 const site_font = Syne({subsets: ["greek"]});
 
 export const metadata = {
