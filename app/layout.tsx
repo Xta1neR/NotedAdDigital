@@ -7,7 +7,7 @@ import {Syne} from "next/font/google";
 const site_font = Syne({subsets: ["greek"]});
 
 export const metadata = {
-  title: "NotedAdDigital - Best Digital Marketing Agency in Jalandhar",
+  title: "Welcome to NotedAdDigital",
   description: "NotedAdDigital is a top-rated digital marketing agency in Jalandhar, providing expert SEO, social media marketing, branding, and performance marketing services to help businesses grow.",
   keywords: "Digital Marketing, SEO, Social Media Marketing, Branding, PPC, Performance Marketing, Jalandhar Marketing Agency, Online Advertising, NotedAdDigital",
   author: "Rituraj Goswami",

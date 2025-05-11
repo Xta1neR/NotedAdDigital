@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useState } from "react";
 import Logo from "@/public/logo.png";
 import React from "react";
+import { usePathname } from "next/navigation";
+
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -11,6 +13,8 @@ const Navbar = () => {
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const pathname = usePathname();
 
   return (
     <div className="sticky top-5 z-50 md:w-3/4 flex items-center justify-between py-6 px-4 rounded-[6px] md:mx-auto md:px-8 mx-6 bg-gray-800/80">
@@ -27,11 +31,11 @@ const Navbar = () => {
       </button>
 
       {/* Desktop Navbar */}
-      <div className="hidden md:flex gap-x-6 text-white font-medium text-lg">
-        <Link href="/" className="hover:text-amber-300">Home</Link>
-        <Link href="/About" className="hover:text-amber-300">Life at NAD</Link>
-        <Link href="/Services" className="hover:text-amber-300">Services</Link>
-        <Link href="/Career" className="hover:text-amber-300">Career</Link>
+      <div className="hidden md:flex gap-x-6 text-white font-medium text-lg ">
+        <Link href="/" className={pathname === "/" ? "active" : "hover:text-yellow-300"}>Home</Link>
+        <Link href="/lifeNAD" className={pathname === "/lifeNAD" ? "active" : "hover:text-yellow-300"}>Life at NAD</Link>
+        <Link href="/serviceNAD" className={pathname === "/serviceNAD" ? "active" : "hover:text-yellow-300"}>Services</Link>
+        <Link href="/Career" className={pathname === "/Career" ? "active" : "hover:text-yellow-300"}>Career</Link>
       </div>
 
       {/* Book a Call Button */}
@@ -54,8 +58,8 @@ const Navbar = () => {
           </button>
 
           <Link href="/" className="text-lg hover:text-blue-500" onClick={toggleMobileMenu}>Home</Link>
-          <Link href="/About" className="text-lg hover:text-blue-500" onClick={toggleMobileMenu}>Life at NAD</Link>
-          <Link href="/Services" className="text-lg hover:text-blue-500" onClick={toggleMobileMenu}>Services</Link>
+          <Link href="/lifeNAD" className="text-lg hover:text-blue-500" onClick={toggleMobileMenu}>Life at NAD</Link>
+          <Link href="/serviceNAD" className="text-lg hover:text-blue-500" onClick={toggleMobileMenu}>Services</Link>
           <Link href="/Career" className="text-lg hover:text-blue-500" onClick={toggleMobileMenu}>Career</Link>
 
           <Link

@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className="bg-[#121212] text-white p-12">
+    <div className="bg-[#121212] text-white relative overflow-hidden">
       {/* Top scrolling text bar */}
       <div className="w-full bg-amber-300 overflow-hidden whitespace-nowrap">
         <div
@@ -51,7 +51,7 @@ const Footer = () => {
       </div>
 
       {/* Main Footer Content */}
-      <main className="max-w-[1920px] mx-auto px-6 md:px-12 lg:px-24 py-20 flex flex-col md:flex-row md:justify-between md:items-start gap-20 md:gap-0">
+      <main className="max-w-full mx-auto px-6 md:px-12 lg:px-24 py-20 flex flex-col md:flex-row md:justify-between md:items-start gap-20 md:gap-0">
         {/* Left Text Block */}
         <div className="md:w-1/3 space-y-2">
           <h2 className="text-white font-extrabold text-lg leading-tight uppercase max-w-[280px]">
@@ -89,7 +89,7 @@ const Footer = () => {
       {/*  Logo */}
       <div className="relative max-w-[1920px] mx-auto px-6 md:px-12 lg:px-24">
         <h1
-          className="text-amber-300 font-extrabold text-[20px] md:text-[160px] leading-none tracking-tight max-w-full select-none mx-auto text-center"
+          className="text-amber-300 pb-20 font-extrabold text-7xl md:text-[250px] leading-none tracking-tight max-w-full select-none mx-auto text-center"
           style={{ fontFamily: "'Montserrat', sans-serif" }}
         >
           Noted Ad Digital

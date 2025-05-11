@@ -1,3 +1,9 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+.active {
+    font-weight: bold;
+    color: yellow;
+  }
+
+  
