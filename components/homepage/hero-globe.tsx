@@ -1,25 +1,23 @@
 import Image from "next/image";
 import { AuroraText } from "../magicui/aurora-text";
-import { Globe } from "../magicui/globe";
 import { TextAnimate } from "../magicui/text-animate";
 
 export function HeroGlobe() {
   return (
     <div>
-        
-        <div className="flex flex-col md:py-10 gap-4 justify-center items-center max-w-7xl mx-auto">
-              <TextAnimate
-                animation="blurInUp"
-                by="character"
-                once
-                className="text-xl font-bold tracking-tighter md:text-5xl  uppercase text-center text-white/80"
-              >
-                We Provide Services
-              </TextAnimate>
-              <AuroraText className="text-xl font-bold tracking-tighter md:text-5xl uppercase text-center">
-                Across the Globe
-              </AuroraText>
-            </div>
+      <div className="flex flex-col md:py-10 gap-4 justify-center items-center max-w-7xl mx-auto">
+        <TextAnimate
+          animation="blurInUp"
+          by="character"
+          once
+          className="text-xl font-bold tracking-tighter md:text-5xl  uppercase text-center text-white/80"
+        >
+          We Provide Services
+        </TextAnimate>
+        <AuroraText className="text-xl font-bold tracking-tighter md:text-5xl uppercase text-center">
+          Across the Globe
+        </AuroraText>
+      </div>
 
       <div className="relative flex size-full items-center justify-center overflow-hidden rounded-lg border bg-background px-40 pb-40 pt-8 md:pb-60">
         <div className="flex md:flex-row flex-col md:py-10 gap-4 justify-center items-center max-w-7xl mx-auto">
@@ -36,14 +34,12 @@ export function HeroGlobe() {
           </AuroraText>
         </div>
         <Image
-          src="/Images/hero-globe.webp"
+          src="/Images/hero-globe.png"
           alt="hero-globe"
           width={800}
           height={800}
-          className="absolute m-32 pt-10 opacity-80 lg:hidden"
+          className="absolute m-32 pt-20 opacity-80 md:mt-96 md:mb-0 md:ml-0 md:mr-0"
         />
-        <Globe className="absolute mb-20 hidden lg:block" />
-        <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
       </div>
     </div>
   );
