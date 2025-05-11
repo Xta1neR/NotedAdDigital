@@ -1,10 +1,8 @@
 'use client';
 import React from 'react';
-import { useRouter } from 'next/navigation';
 import Image from 'next/image';
 
 const TrainingProgramPage = () => {
-  const router = useRouter();
 
   return (
     <section className=" text-white min-h-screen py-20 px-4 md:px-8 relative overflow-hidden">
