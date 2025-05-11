@@ -42,7 +42,7 @@ export function HeroServices() {
       title: "Social Media Marketing",
       description: "Memes, reels, and algorithms — we master them all to make your brand the talk of every timeline.",
       icon: <IconCloud />,
-      link: "/services/uptime",
+      link: "/serviceNAD",
     },
     {
       title: "Influencer Marketing",
@@ -142,7 +142,7 @@ const Feature = ({
 
       <div className="mt-4 px-10 z-10 ">
         <Link
-          href={'/Services'}
+          href={'/serviceNAD'}
         >
           <StarButton />
         </Link>
