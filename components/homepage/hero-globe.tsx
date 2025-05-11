@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { AuroraText } from "../magicui/aurora-text";
 import { Globe } from "../magicui/globe";
 import { TextAnimate } from "../magicui/text-animate";
@@ -34,8 +35,14 @@ export function HeroGlobe() {
             Across the Globe
           </AuroraText>
         </div>
-
-        <Globe className="absolute mb-20" />
+        <Image
+          src="/Images/hero-globe.webp"
+          alt="hero-globe"
+          width={800}
+          height={800}
+          className="absolute m-32 pt-10 opacity-80 lg:hidden"
+        />
+        <Globe className="absolute mb-20 hidden lg:block" />
         <div className="pointer-events-none absolute inset-0 h-full bg-[radial-gradient(circle_at_50%_200%,rgba(0,0,0,0.2),rgba(255,255,255,0))]" />
       </div>
     </div>

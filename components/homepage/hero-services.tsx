@@ -13,7 +13,6 @@ import {
 import { TextAnimate } from "@/components/magicui/text-animate";
 import { AuroraText } from "@/components/magicui/aurora-text";
 import Link from "next/link";
-import StarButton from "@/components/ui/star-button";
 
 export function HeroServices() {
   const features = [
@@ -144,7 +143,8 @@ const Feature = ({
         <Link
           href={'/serviceNAD'}
         >
-          <StarButton />
+          
+          <button className="bg-[#FEC195] hover:bg-black hover:text-amber-300 text-black font-bold py-4 px-6 rounded-2xl">Learn More</button>
         </Link>
       </div>
     </div>
